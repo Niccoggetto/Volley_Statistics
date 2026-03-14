@@ -15,7 +15,7 @@ class PlayerTracker:
     def update(self, detections, frame_number):
         # recieves a list of detections and updates the positions and distance traveled for each player
         for det in detections:
-            track_id = det ["id"]
+            track_id = det ["track_id"]
             if track_id <0:
                 continue # skip invalid detections
 

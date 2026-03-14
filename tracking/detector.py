@@ -75,7 +75,7 @@ class PlayerDetector:
             conf = float(box.conf[0])  # get confidence score
 
             detections.append({
-                "id": track_id,
+                "track_id": track_id,
                 "bbox": (x1, y1, x2, y2),
                 "conf": conf
             })
